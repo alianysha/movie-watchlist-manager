@@ -134,3 +134,9 @@ Open the local URL displayed by Vite in your browser.
 ## Repository
 
 GitHub: https://github.com/alianysha/movie-watchlist-manager
+## Movie Status Workflow
+
+- **To Watch:** Movies waiting to be watched.
+- **Watching:** Movies currently in progress.
+- **Watched:** Completed movies with a required rating from 1 to 10.
+- **Watch Next:** Recommends the highest-priority movie, using runtime as a tie-breaker.
