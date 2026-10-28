@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API = "http://localhost:5000/api/movies";
+const API = "https://cinebox-api-ae9y.onrender.com/api/movies";
 
 const GENRES = [
   "Action", "Comedy", "Drama", "Horror",
