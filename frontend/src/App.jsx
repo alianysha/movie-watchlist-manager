@@ -445,7 +445,7 @@ export default function App() {
                   : [];
 
             return (
-              <article key={movie._id}>
+              <article key={movie._id} className="movie-card">
                 <h3>{movie.title}</h3>
                 <p>Code: {movie.movieCode}</p>
                 <p>Genre: {movie.genre}</p>

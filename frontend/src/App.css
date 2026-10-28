@@ -105,3 +105,91 @@ footer>span{font-size:9px;letter-spacing:1.5px;color:#8e7b76}
 .rating-modal label{margin-bottom:20px}
 @media(max-width:1000px){.app-shell{padding:0 26px}.stats-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.movie-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr 1fr}.hero-stamp{right:0}.movie-form{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.app-shell{padding:0 16px}.topbar{height:75px}.top-label{display:none}.hero{grid-template-columns:1fr;padding-bottom:20px}.hero-copy{padding:36px 0 0}.hero h1{font-size:55px}.hero-art{height:280px}.poster{width:145px;height:205px}.hero-stamp{bottom:8px;right:2px}.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:20px 0 30px}.stat-card{padding:15px 12px;min-height:110px}.stat-card strong{font-size:29px}.section-heading h2{font-size:27px}.section-number{font-size:8px}.movie-form{grid-template-columns:1fr;padding:16px;gap:14px}.movie-form .wide{grid-column:auto}.form-actions{flex-wrap:wrap}.filters{flex-wrap:wrap}.search-box{flex-basis:100%}.filters select{flex:1;min-width:0}.movie-grid{grid-template-columns:1fr}.card-poster{height:150px}.next-panel{padding:18px}.next-panel h2{font-size:24px}footer{align-items:flex-start;flex-direction:column;justify-content:center;padding:22px 0}footer>span{font-size:8px}.pagination{gap:10px}.pagination button{padding:9px}}
+
+/* CineBox visual polish */
+body {
+  background: radial-gradient(ellipse at top, #301019 0%, #100d10 55%);
+}
+
+#root {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 32px 24px 60px;
+}
+
+h1 {
+  letter-spacing: 3px;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  color: #fff;
+}
+
+h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #49212e;
+}
+
+button {
+  background: #c51f3a;
+  color: #fff;
+  border: 1px solid #e64a61;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin: 4px 5px 4px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e02c48;
+}
+
+input, select, textarea {
+  background: #1c171b;
+  color: #fff;
+  border: 1px solid #56323d;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #c51f3a;
+  outline-offset: 1px;
+}
+
+label {
+  color: #e2d2d8;
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 20px 14px 40px;
+  }
+}
+.movie-card {
+  background: linear-gradient(145deg, #21171c, #151115);
+  border: 1px solid #49303a;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 8px 24px #0005;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.movie-card:hover {
+  border-color: #c9233a;
+  transform: translateY(-2px);
+}
+
+.movie-card h3 {
+  color: #ff7187;
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+.movie-card p {
+  margin: 10px 0;
+  color: #d7cbd0;
+}
+
+.movie-card button {
+  margin: 6px 6px 6px 0;
+}
